@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire SNCF : Réalisé par Andréa JOVINAC</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css.style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/9885bed9d9.js"></script>
+    <!-- TYPOGRAPHIES -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- SCRIPT -->
+    <script src="https://kit.fontawesome.com/b618ff4ee1.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <main>
@@ -15,37 +23,169 @@
                 <ul>
                     <li><a href=""> Voyageurs</a></li>
                     <li>/</li>
-                    <li><a href=""> Billets & info trajets</a></li>
-                </ul>
-            </menu>
-            <menu class="breadcrumbs"> 
-                <ul>
-                    <li><a href=""> Voyageurs</a></li>
+                    <li><a href=""> Billets & Info trajets</a></li>
                     <li>/</li>
-                    <li><a href=""> Billets & info trajets</a></li>
                 </ul>
             </menu>
-            <h1> RÉSERVATION</h1>
-                <img src="img/logo-voyage-sncf.jpg" alt="Logo de voyage de la SNCF"/>
-            <hr/>
+            <menu class="liens"> 
+                <ul>
+                    <li><a href=""> <i class="fas fa-print"></i></a></li>
+                    <li><a href=""> <i class="fas fa-share-alt"></i></a></li>
+                </ul>
+            </menu>
+            <section class="titre"> 
+                <h1> RÉSERVATION</h1>
+                <img id="logo" src="img/logo-voyage-sncf.jpg" alt="Logo de voyage de la SNCF"/>
+            </section>
         </header>
          <!-- Section -->
-        <section>
-            <p> 
+        <section class="handicap-reserv">
+            <p id="handicap"> 
                 <i class="fas fa-wheelchair"></i> Voyageur handicapé, rendez-vous sur votre espace dédié <a href="" alt="">Espace dédié</a>
             </p>
-            <a href=""> Gérer mes réservations </a>
+            <a href="" id="reservation"> Gérer mes réservations > </a>
         </section>
          <!-- Formulaire -->
             <form action="">
                 <fieldset>
-                        <p> *Champs obligatoires</p>
-                    <section>
-                        <input type="checkbox" name="allerretour" checked>
-                        <label for="allerretour">Aller et retour différents</label>
+                        <p id="champs"> *Champs obligatoires</p>
+                    <section id="allerretoursection">
+                        <input type="checkbox" id="allerretour" name="allerretour" checked>
+                        <label id="allerretour" for="allerretour">Aller et retour différents</label>
                     </section>
-                    <label for="depart"> Départ*</label>
-                    <input type="text" name="depart">
+
+                    <!-- Les labels : Départ / Arrivée -->
+                    <section class="departarrivee">
+                        <label id="depart" for="depart"> Départ*</label>
+                        <label for="depart" for="arrive"> Arrivée le :</label>
+                    </section>
+
+                     <!-- Les inputs : Départ / Arrivée -->
+                    <section class="inputdepartarrivee"> 
+                        <input type="text" name="depart">
+                        <input type="text" name="arrive">
+                    </section>
+
+                    <!-- Les labels : Aller le / Départ le -->
+                    <section class="allerledepartle1">
+                        <label for="meeting-time">Aller le :</label>
+                        <label for="meeting-time">Départ le :</label>
+                    </section>
+
+                    <section class="inputallerle">
+                        <input type="date" id="meeting-time" name="meeting-time" value="2018-06-12">
+                            <select id="select">
+                                <option value="">Départ le</option>
+                                <option value="6h">6h00</option>
+                                <option value="7h">7h00</option>
+                                <option value="8h">8h00</option>
+                                <option value="9h">9h00</option>
+                                <option value="10h">10h00</option>
+                                <option value="11h">11h00</option>
+                                <option value="12h">12h00</option>
+                            </select>
+                            <select id="select">
+                                <option value="17h">17h</option>
+                                <option value="18h">18H</option>
+                                <option value="19h">19h</option>
+                                <option value="20h">20h</option>
+                                <option value="21h">21h</option>
+                                <option value="22h">22h</option>
+                                <option value="23h">23h</option>
+                            </select>
+                    </section>
+                    <section class="inputdepartle2">
+                        <input type="date" id="meeting-time" name="meeting-time" value="2018-06-12">
+                        <select id="select">
+                            <option value="">Départ le</option>
+                            <option value="6h">6h</option>
+                            <option value="7h">7h</option>
+                            <option value="8h">8h</option>
+                            <option value="9h">9h</option>
+                            <option value="10h">10h</option>
+                            <option value="11h">11h</option>
+                            <option value="12h">12h</option>
+                        </select>
+                        <select id="select">
+                            <option value="17h">17h</option>
+                            <option value="18h">18h</option>
+                            <option value="19h">19h</option>
+                            <option value="20h">20h</option>
+                            <option value="21h">21h</option>
+                            <option value="22h">22h</option>
+                            <option value="23h">23h</option>
+                        </select>
+                    </section>
+                    <section class="retourtrajet">
+                        <input type="checkbox" id="trajet" name="trajet" checked>
+                        <label for="trajet">Trajet Retour</label>
+
+                        <label for="trajetvia">Ou trajet via</label>
+                        <input type="text" id="trajetvia" name="trajetvia" checked>
+
+                    </section>
+                    <section>
+                        <p> CONFORT</p>
+                            <ul>
+                                <li> 
+                                    <input type="radio" id="confort1" name="confort1" value="30">
+                                    <label for="confort1">1ère Classe</label>
+                                </li>
+                                <li> 
+                                    <input type="radio" id="confort2" name="confort2" value="30">
+                                    <label for="confort1">2ème Classe</label>
+                                </li>
+                            </ul>
+                    </section>
+                    <section>
+                        <h3> PASSAGERS</h3>
+                        <select id="selectpassager">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        <a href=""> Plus de 9 passagers </a>
+                    </section>
+                    <!-------------->
+                    <!-- PASSAGER -->
+                    <!-------------->
+                    <section>
+                        <h3> Passager 1</h3>
+                        <label for="profilpassager">Profil du passager</label>
+                        <select id="profilpassager">
+                            <option value="26-59">26-59 ans</option>
+                            <option value="60+">60 et plus</option>
+                        </select>
+
+                        <!-- Carte d'abonnement -->
+                        <label for="carteabonnement">Carte et Abonnement</label>
+                        <select id="profilpassager">
+                            <option value="26-59">Carte d'abonnement</option>
+                            <option value="60+">Pas abonné</option>
+                        </select>
+
+                         <!-- Programme de fidélité -->
+                         <label for="programedefidelite">Programme de fidélité</label>
+                         <select id="programedefidelite">
+                             <option value="26-59">Programme de fidélité</option>
+                             <option value="60+">Tu es fidéle ?</option>
+                         </select>
+
+                         <!-- Code avantage-->
+                         <label for="programedefidelite">Programme de fidélité</label>
+                         <input type="text" value="Saisissez ici votre code" name="programedefidelite">
+                    </section>
+                    <hr>
+                    <section>
+                        <a href=""> Voyager avec votre animal de compagnie</a>
+                        <button>HORAIRES SEULS</button>
+                        <button>RECHERCHE</button>
+                        <a href=""> Informations sur les emissions du co2 ></a>
+                    </section>
 
                 </fieldset>
             </form>

@@ -1,0 +1,195 @@
+/*********************************/
+/************ GENERAL ***********/
+/*******************************/
+
+body {
+    font-family: 'Avenir', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+main {
+    width: 731px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #cb0044;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+/**********************************/
+/*********************************/
+/************* HEADER ***********/
+/*******************************/
+/******************************/
+
+.titre {
+    display: grid;
+    grid-template-columns: 530px auto;
+}
+
+
+/*********************************/
+/************** MENU ************/
+/*******************************/
+
+.breadcrumbs {
+    margin : 0;
+    display: inline-block;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.breadcrumbs ul, .liens ul {
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    padding-right: 20px;
+}
+
+.breadcrumbs ul li, .liens ul li {
+    display: inline;
+}
+
+.liens ul li {
+    margin-left: 10px;
+}
+
+.liens ul li a {
+    color: #cb0044;
+}
+
+.breadcrumbs ul li a {
+    color: #a5999f;
+}
+
+.breadcrumbs ul li {
+    color: #a5999f;
+    font-size: 12px;
+}
+
+.liens {
+    padding: 0px;
+    padding-top: 20px;
+    display: inline;
+    float: right;
+    margin: 0;
+}
+
+/*********************************/
+/************** HANDICAP ************/
+/*******************************/
+
+.handicap-reserv {
+    border-top: 1px solid #dddddd;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#handicap {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#reservation {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+/*********************************/
+/************** FORM ************/
+/*******************************/
+
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+label {
+    color: grey;
+    font-size: 14px;
+}
+
+#champs {
+    font-style: italic;
+    color: #000;
+    font-size: 12px;
+    display: block;
+}
+#allerretoursection {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.departarrivee, .allerledepartle {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto  auto;
+    gap: 22px;
+
+}
+.inputdepartarrivee {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 332px auto;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+input {
+    border: 1px solid #a9a9a9;
+
+}
+
+input[type=text] {
+    height: 30px;
+}
+
+input[type=date] {
+    color: grey;
+    font-family: 'Avenir', sans-serif;
+    height: 30px;
+}
+
+#depart {
+    display: inline-block;
+}
+
+.allerledepartle1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 22px;
+    margin-top: 3px;
+}
+
+.inputallerle, .inputdepartle2 {
+    display: inline-grid;
+    grid-template-columns: 169px 87px 56px;
+    gap: 14px;
+    margin-top: 3px;
+}
+
+.inputallerle {
+    margin-right: 19px;
+}
+
+.retourtrajet {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 22px;
+}
