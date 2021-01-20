@@ -60,7 +60,7 @@
                         <label for="depart" for="arrive"> Arrivée le :</label>
                     </section>
 
-                     <!-- Les inputs : Départ / Arrivée -->
+                     <!-- Les inputs : Départ / Arrivée : Destination -->
                     <section class="inputdepartarrivee"> 
                         <input type="text" name="depart">
                         <input type="text" name="arrive">
@@ -72,57 +72,34 @@
                         <label for="meeting-time">Départ le :</label>
                     </section>
 
-                    <section class="inputallerle">
-                        <input type="date" id="meeting-time" name="meeting-time" value="2018-06-12">
+                    <!-- Les Inputs : Aller le / Départ le -->  
+                    <section class="input-depart-arrive-le">
+                        <!-- Départ le -->
+                            <input type="date" id="meeting-time" name="meeting-time" value="2020-01-01">
+                                <select id="select">
+                                    <option value="departle">Départ le</option>
+                                    <option value="arriverle">Arriver le</option>
+                                </select>
+                                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                        
+                        <!-- Arrivée le -->
+                        <input type="date" id="meeting-time" name="meeting-time" value="2020-01-01">
                             <select id="select">
-                                <option value="">Départ le</option>
-                                <option value="6h">6h00</option>
-                                <option value="7h">7h00</option>
-                                <option value="8h">8h00</option>
-                                <option value="9h">9h00</option>
-                                <option value="10h">10h00</option>
-                                <option value="11h">11h00</option>
-                                <option value="12h">12h00</option>
+                                <option value="departle">Départ le</option>
+                                <option value="arriverle">Arriver le</option>
                             </select>
-                            <select id="select">
-                                <option value="17h">17h</option>
-                                <option value="18h">18H</option>
-                                <option value="19h">19h</option>
-                                <option value="20h">20h</option>
-                                <option value="21h">21h</option>
-                                <option value="22h">22h</option>
-                                <option value="23h">23h</option>
-                            </select>
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
                     </section>
-                    <section class="inputdepartle2">
-                        <input type="date" id="meeting-time" name="meeting-time" value="2018-06-12">
-                        <select id="select">
-                            <option value="">Départ le</option>
-                            <option value="6h">6h</option>
-                            <option value="7h">7h</option>
-                            <option value="8h">8h</option>
-                            <option value="9h">9h</option>
-                            <option value="10h">10h</option>
-                            <option value="11h">11h</option>
-                            <option value="12h">12h</option>
-                        </select>
-                        <select id="select">
-                            <option value="17h">17h</option>
-                            <option value="18h">18h</option>
-                            <option value="19h">19h</option>
-                            <option value="20h">20h</option>
-                            <option value="21h">21h</option>
-                            <option value="22h">22h</option>
-                            <option value="23h">23h</option>
-                        </select>
-                    </section>
+                     <!-- Trajet / Retour --> 
                     <section class="retourtrajet">
-                        <input type="checkbox" id="trajet" name="trajet" checked>
-                        <label for="trajet">Trajet Retour</label>
-
-                        <label for="trajetvia">Ou trajet via</label>
-                        <input type="text" id="trajetvia" name="trajetvia" checked>
-
+                        <div class="trajetretour"> 
+                            <input type="checkbox" id="trajet" name="trajet" checked>
+                            <label for="trajet">Trajet Retour</label>
+                        </div>
+                        <div class="trajetvia"> 
+                            <label for="trajetvia">Ou trajet via</label>
+                            <input type="text" id="trajetvia" name="trajetvia" checked>
+                        </div>
                     </section>
                     <section>
                         <p> CONFORT</p>
